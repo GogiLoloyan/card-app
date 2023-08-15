@@ -1,0 +1,27 @@
+.layout {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  grid-template-rows: max-content 1fr max-content;
+  grid-template-areas:
+    "header sidebar"
+    "main sidebar"
+    "footer sidebar";
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.layout .header {
+  grid-area: header;
+}
+
+.layout .footer {
+  grid-area: footer;
+}
+
+.layout .sidebar {
+  grid-area: sidebar;
+}
+
+.layout .main {
+  grid-area: main;
+}
